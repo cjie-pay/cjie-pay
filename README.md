@@ -27,6 +27,7 @@ pile grow from 136 XRP. The practice price is $1.17 per XRP.
 4. More cities — Toronto first, then Regina, then across Canada.
 5. Boss side — buy XRP once, pay many workers.
 6. Teaching — plain-words guides and videos so workers learn it fast.
+7. Family sending — send XRP to family, fast and cheap, no bank needed to receive, just a wallet.
 
 ## The grant
 
