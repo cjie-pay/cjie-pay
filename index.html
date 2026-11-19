@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CJIE Pay — Demo</title>
+</head>
+<body>
+<h1>CJIE Pay — Demo</h1>
+<p>Fake XRP only. No real money.</p>
+
+<p>Practice price: $1.17 per XRP.</p>
+
+<h2>Pick a job</h2>
+<button onclick="pay(trailerJob)">Trailer — $100</button>
+<button onclick="pay(detailingJob)">Detailing — $60</button>
+<button onclick="pay(kitchenJob)">Kitchen — $70</button>
+
+<h2>Your pile</h2>
+<p id="pile">136.00 XRP</p>
+<p id="lastPay">No payment yet. Pick a job.</p>
+
+<script>
+// Practice price: $1.17 per XRP.
+let xrpPrice = 1.17;
+
+// The pile starts at 136 XRP.
+let totalXRP = 136;
+
+// Turn dollars into XRP.
+function calcXRP(dollars) {
+  return dollars / xrpPrice;
+}
+
+// The jobs.
+let trailerJob = { type: "Trailer", price: 100, who: "Bro" };
+let detailingJob = { type: "Detailing", price: 60, who: "Bro" };
+let kitchenJob = { type: "Kitchen", price: 70, who: "Friend" };
+
+// Pay for a job. The pile grows.
+function pay(job) {
+  let xrp = calcXRP(job.price);
+  totalXRP = totalXRP + xrp;
+  document.getElementById("pile").textContent = totalXRP.toFixed(2) + " XRP";
+  document.getElementById("lastPay").textContent =
+    job.type + ": $" + job.price + " = " + xrp.toFixed(2) + " XRP. Thank you, " + job.who + "!";
+}
+
+// The grant plan, from Lesson 11.
+let grant = {
+  demo: "CJIE Pay page",
+  plan: ["real app", "easy wallets", "first 50 workers",
+         "more cities", "boss side", "teaching"],
+  budget: 200000,
+  who: "ordinary workers"
+};
+</script>
+</body>
+</html>
