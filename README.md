@@ -23,7 +23,7 @@ pile grow from 136 XRP. The practice price is $1.17 per XRP.
 
 1. Real app that saves — every worker has their own log that stays.
 2. Easy wallets — simple setup in plain words, no crypto knowledge needed.
-3. First 50 workers in Toronto getting paid in XRP.
+3. First 18 workers in Toronto getting paid in XRP.
 4. More cities — Toronto first, then Regina, then across Canada.
 5. Boss side — buy XRP once, pay many workers.
 6. Teaching — plain-words guides and videos so workers learn it fast.
